@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/LogoMakr.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <title>Agenda de contatos</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <lord-icon class="header-img"
+            src="https://cdn.lordicon.com/ejnrjovh.json"
+            trigger="hover"
+            style="width:50px;height:50px">
+        </lord-icon>
+        <h1>Agenda de contatos</h1>
+    </header>
+    <form id="form-atividade">
+        
+        <input type="text" id="nome-contato" placeholder="Digite seu nome" required>
+        
+        <input type="number" id="phone-contato" placeholder="Digite seu telefone" required>
+        
+        <button type="button" class="glow-on-hover" value="Cadastrar" onclick="addContact()">Cadastrar</button>
+        
+    </form>
+    <table class="table" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Nome do contato</th>
+                <th>Telefone</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td id="media-final-valor">---</td>
+                <td id="media-final-resultado">---</td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+<script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+<script src="/scripts.js"></script>
+</body>
+</html>
