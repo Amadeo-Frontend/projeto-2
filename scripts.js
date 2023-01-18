@@ -9,6 +9,7 @@ form.addEventListener("submit", function (e) {
   atualizaTabela();
   validateNome();
   validatePhone();
+  formatPhoneNumber();
 });
 
 function adicionaLinha() {
@@ -71,3 +72,16 @@ const inputNome = document.getElementById("nome-contato");
 inputNome.addEventListener("input", function (e) {
     this.value = this.value.replace(/[^a-zA-Z]/g, '');
 });
+
+function formatPhoneNumber(phoneNumber) {
+  return "(" + phoneNumber.slice(0, 2) + ") " + phoneNumber.slice(2, 6) + "-" + phoneNumber.slice(6);
+}
+document.getElementById("phone-contato").addEventListener("input", function() {
+  let phoneNumber = this.value;
+  let formattedPhoneNumber = formatPhoneNumber(phoneNumber);
+  document.getElementById("tabela__phone").innerHTML = formattedPhoneNumber;
+});
+
+
+
+
