@@ -24,7 +24,7 @@
         <input type="text" id="nome-contato" placeholder="Digite seu nome" onkeyup="validateNome()" required>
         <span id="nome-erro"></span>
         
-        <input type="number" id="phone-contato" placeholder="Digite seu telefone" onkeyup="validatePhone()" required pattern="^\(?\d{2}\)?[\s-]?\d{4,5}-?\d{4}$" title="(XX) XXXX-XXXX">
+        <input type="tel" id="phone-contato" placeholder="Digite seu telefone" onkeyup="validatePhone()" required pattern="^\(?\d{2}\)?[\s-]?\d{4,5}-?\d{4}$" title="(XX) XXXX-XXXX">
         <span id="phone-erro"></span>
         
         <button type="submit" class="glow-on-hover" id="submit-contato" value="Cadastrar">Cadastrar</button>
@@ -39,8 +39,8 @@
         </thead>
         <tbody>
             
-            <td>---</td>
-            <td>---</td>
+            <td class="tabela__texto">---</td>
+            <td class="tabela__texto">---</td>
         </tbody>
         <tfoot>
             <tr>

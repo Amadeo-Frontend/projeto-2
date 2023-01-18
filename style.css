@@ -172,3 +172,7 @@ table td {
 table td img {
     height: 30px;
 }
+
+table tbody td{
+    color:#06f716;
+}
