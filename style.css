@@ -15,6 +15,7 @@ body {
 header {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: 40px;
 }
 
@@ -85,6 +86,7 @@ form input {
 .glow-on-hover {
     font-size: 24px;
     padding: 10px;
+    margin-left: 8px ;
     border: none;
     outline: none;
     color: #fff;
@@ -178,6 +180,10 @@ table tbody td{
 }
 
 @media (max-width: 768px) {
+   .header-img{
+width: 40px;
+height: 40px;
+    }
     form {
         display: flex;
         align-items: center;
