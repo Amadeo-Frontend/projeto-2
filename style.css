@@ -176,3 +176,18 @@ table td img {
 table tbody td{
     color:#06f716;
 }
+
+@media (max-width: 768px) {
+    form {
+        display: flex;
+        align-items: center;
+        max-width: 640px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 36px;
+    }
+    form input{
+        margin-bottom: 16px;
+    }
+}
