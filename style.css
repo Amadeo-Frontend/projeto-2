@@ -26,9 +26,11 @@ header h1 {
     margin-left: 16px;
     text-shadow: 2px 2px 5px #000;
 }
- thead th{
+
+thead th {
     color: #26fbe2;
- }
+}
+
 .container {
     max-width: 960px;
     width: 100%;
@@ -66,6 +68,18 @@ form input {
         5px 5px 15px rgba(0, 0, 0, 0.35);
     transition: 0.5s;
     outline: none;
+}
+
+#form-atividade span {
+    position: relative;
+    top: 0px;
+    right: 50px;
+    font-size: 14px;
+    color: #ff0000;
+}
+
+#form-atividade span i {
+    color: white;
 }
 
 .glow-on-hover {

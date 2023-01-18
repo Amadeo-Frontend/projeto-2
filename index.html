@@ -21,11 +21,13 @@
     </header>
     <form id="form-atividade">
         
-        <input type="text" id="nome-contato" placeholder="Digite seu nome" required>
+        <input type="text" id="nome-contato" placeholder="Digite seu nome" onkeyup="validateNome()" required>
+        <span id="nome-erro"></span>
         
-        <input type="number" id="phone-contato" placeholder="Digite seu telefone" required>
+        <input type="number" id="phone-contato" placeholder="Digite seu telefone" onkeyup="validatePhone()" required pattern="^\(?\d{2}\)?[\s-]?\d{4,5}-?\d{4}$" title="(XX) XXXX-XXXX">
+        <span id="phone-erro"></span>
         
-        <button type="button" class="glow-on-hover" value="Cadastrar" onclick="addContact()">Cadastrar</button>
+        <button type="submit" class="glow-on-hover" id="submit-contato" value="Cadastrar">Cadastrar</button>
         
     </form>
     <table class="table" cellspacing="0">
@@ -36,11 +38,12 @@
             </tr>
         </thead>
         <tbody>
+            
+            <td>---</td>
+            <td>---</td>
         </tbody>
         <tfoot>
             <tr>
-                <td id="media-final-valor">---</td>
-                <td id="media-final-resultado">---</td>
             </tr>
         </tfoot>
     </table>
